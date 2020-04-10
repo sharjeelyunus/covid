@@ -66,6 +66,7 @@ div.google-visualization-tooltip > ul > li > span
 {
     -webkit-background-color: #333;
     background-color: #333;
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb
@@ -113,6 +114,7 @@ div.google-visualization-tooltip > ul > li > span
     text-align: right;
     top: 0;
     width: 38px;
+    margin-right: 30px;
 }
 
 .arwen_box_left_confirmed
@@ -130,7 +132,7 @@ div.google-visualization-tooltip > ul > li > span
     text-align: center;
     text-transform: uppercase;
 	top: 60px;
-	width: 128px;
+    width: 150px;
 }
 
 .arwen_box_left_death
@@ -141,14 +143,14 @@ div.google-visualization-tooltip > ul > li > span
 	box-sizing: border-box;
     color: #999;
 	height: 120px;
-	left: 128px;
+	left: 150px;
     padding-top: 34px;
 	position: absolute;
     overflow-y: auto;
     text-align: center;
     text-transform: uppercase;
 	top: 60px;
-	width: 128px;
+	width: 150px;
 }
 
 .arwen_main
@@ -192,7 +194,7 @@ div.google-visualization-tooltip > ul > li > span
     height: 16px;
     float: left;
     position: relative;
-    margin-left: 16px;
+    margin-left: 30px;
     margin-right: 10px;
     margin-top: -8px;
     top: 50%;
@@ -215,7 +217,10 @@ div.google-visualization-tooltip > ul > li > span
     width: 100%;
 }
 
-.arwen_item:hover { background-color: #333; }
+.arwen_item:hover { 
+    background-color: #333;
+    transform: scale(1.2);
+}
 
 .arwen_item_label
 {
@@ -225,7 +230,6 @@ div.google-visualization-tooltip > ul > li > span
     line-height: 38px;
     position: relative;
     top: 0;
-    width: calc(100% - 134px);
 }
 
 .arwen_menu
@@ -238,7 +242,7 @@ div.google-visualization-tooltip > ul > li > span
     position: absolute;
     overflow-y: auto;
     top: 180px;
-    width: 256px;
+    width: 300px;
 }
 
 .arwen_chart_set
@@ -249,7 +253,7 @@ div.google-visualization-tooltip > ul > li > span
     height: calc(24px + 142px);
     width: 256px;
     bottom: 42px;
-    left: 272px;
+    left: 332px;
     z-index: 1;
 }
 
@@ -391,7 +395,7 @@ div.google-visualization-tooltip > ul > li > span
     }
 }
 
-.arwen_confirmed { color: orange; }
+.arwen_confirmed { color: orange;}
 .arwen_death { color: #ff9797; }
 
 .arwen_color_999 { color: #999; }
